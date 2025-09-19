@@ -1,0 +1,169 @@
+/* header */
+
+#header {
+    z-index: 0;
+    display: flex;
+    align-items: center;
+}
+
+#header .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 150px;
+    width: 100%;
+}
+
+#header .content .info {
+    display: flex;
+    flex-direction: column;
+}
+
+#header .content .info .minecraft-server-ip {
+    color: var(--white-color);
+    font-family: var(--minecraft-font);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#header .content .info .title {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 900;
+}
+
+#header .content .info .title span {
+    color: var(--main-color);
+}
+
+#header .content .description {
+    color: var(--description-color);
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 900px;
+    line-height: 1.6;
+}
+
+/* karta */
+
+#karta {}
+
+#karta .content {
+    background-color: var(--background-color-transparent);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#karta .content .karta-box-censored .karta-box {
+    width: 100%;
+    height: 800px;
+    border-radius: 6px;
+    position: relative;
+}
+
+#karta .content .karta-box-censored .karta-box .karta-iframe {
+    width: 100%;
+    height: 800px;
+    border-radius: 6px;
+    border: 0;
+}
+
+#karta .content .karta-box-censored .karta-box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.2);
+    /* затемнення + прозорість */
+    backdrop-filter: blur(15px);
+    /* сам блюр */
+    -webkit-backdrop-filter: blur(15px);
+    /* для Safari */
+
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    justify-content: center;
+}
+
+#karta .content .karta-box-censored .karta-box .overlay .karta-button-fullscreen {
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 16px 10px;
+    border: 0;
+    cursor: pointer;
+    background-color: #181818;
+    color: var(--white-color);
+    border-radius: 4px;
+    transition: 250ms;
+}
+
+#karta .content .karta-box-censored .karta-box .overlay .karta-button-fullscreen:hover {
+    opacity: 0.8;
+}
+
+#karta .content .karta-box-censored {
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    /* прозорий фон */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 6px;
+}
+
+#karta .content .karta-box-censored .karta-box-censored-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--minecraft-font);
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 38px;
+    z-index: 2;
+    width: 400px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 819px) {
+    #karta .content .karta-box-censored .karta-box {
+        width: 100%;
+        height: 500px;
+    }
+
+    #karta .content .karta-box-censored .karta-box .karta-iframe {
+        width: 100%;
+        height: 500px;
+    }
+
+    #karta .content .karta-box-censored .karta-box-censored-title {
+        font-size: 24px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    #karta .content .karta-box-censored .karta-box {
+        width: 100%;
+        height: 250px;
+    }
+
+    #karta .content .karta-box-censored .karta-box .karta-iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    #karta .content .karta-box-censored .karta-box-censored-title {
+        font-size: 14px;
+        width: 120px;
+    }
+}
