@@ -3,7 +3,7 @@ const config = {
         serverLogoImageFileName: "logo.png", /*Это имя файла логотипа в /images/ (Если вы загружаете новый логотип с другим именем, вам необходимо изменить это значение)*/
         serverName: "ORBitium", /*Имя сервера*/
         serverIp: "mc.orbitium.com", /*IP-адрес сервера (если вы хотите добавить счетчик пользователей онлайн, у вас должны быть true enable-status и enable-query в server.properties)*/
-        discordServerID: "1177362239599169596" /*Ваш идентификатор сервера (если вы хотите добавить счетчик пользователей онлайн, у вас должен быть включен виджет сервера Discord)*/
+        discordServerID: "1268943951893758122" /*Ваш идентификатор сервера (если вы хотите добавить счетчик пользователей онлайн, у вас должен быть включен виджет сервера Discord)*/
     },
 
     /*Admin-Team
@@ -39,22 +39,16 @@ const config = {
     adminTeamPage: {
         адміни: [
             {
-                inGameName: "VarenukYT",
+                inGameName: "Anttoha",
                 rank: "Власник",
                 skinUrlOrPathToFile: "",
+                rankColor: "rgb(255, 90, 90)"
+            },
+            {
+                inGameName: "VarenukYT",
+                rank: "Адмін",
+                skinUrlOrPathToFile: "",
                 rankColor: "rgba(255, 85, 85, 1)"
-            },
-            {
-                inGameName: "Anttoha",
-                rank: "Адмін",
-                skinUrlOrPathToFile: "",
-                rankColor: "rgb(255, 90, 90)"
-            },
-            {
-                inGameName: "jcoll",
-                rank: "Адмін",
-                skinUrlOrPathToFile: "",
-                rankColor: "rgb(255, 90, 90)"
             }
         ],
         модери: [
