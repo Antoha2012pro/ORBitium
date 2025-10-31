@@ -43,7 +43,13 @@ const config = {
                 rank: "Власник",
                 skinUrlOrPathToFile: "",
                 rankColor: "rgb(255, 90, 90)"
-            },
+            },,
+            {
+                inGameName: "Raizkin",
+                rank: "Тех. Адмін",
+                skinUrlOrPathToFile: "",
+                rankColor: "rgba(255, 85, 85, 1)"
+            }
             {
                 inGameName: "VarenukYT",
                 rank: "Адмін",
